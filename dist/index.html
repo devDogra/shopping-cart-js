@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <!-- Stop favicon warnings -->
+    <link rel="icon" href="data:,">
+    <!-- - -->
+    <script src="/script.a6e1fada.js" defer=""></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="/styles.b61e60ae.css">
+<script src="/styles.b61e60ae.js"></script></head>
+
+<body>
+    <header class="navbar-container">
+        <div class="navbar-logo"><a href="" class="navbar-logo-link">Nav</a></div>
+        <div class="navbar">
+            <a href="" class="store-link">Store</a>
+            <a href="" class="team-link">Team</a>
+            <a href="" class="home-link">Home</a>
+        </div>
+        <a class="cart-btn btn btn-outline-primary btn-md" show="">
+            <img src="/shopping-cart.e582da7f.png" alt="">
+        </a>
+        
+    </header>
+    
+    <div class="cart-items">
+        <!-- contains cart items -->
+    </div>
+
+    <section class="store-items">
+        <!-- contains store items -->
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Templates                                -->
+<!-- ----------------------------------------------------------------------- -->
+    <template id="cart-item-template">
+
+        <div class="cart-item">
+            <div class="cart-item-display">
+                <!-- display absolute needed -->
+                <button class="remove-cart-item-btn btn btn-secondary btn-sm ">X</button>
+                <button class="decrease-cart-item-quantity-btn btn btn-secondary btn-sm"> --- </button>
+            </div>
+            <div class="cart-item-info">
+                <div class="cart-item-quantity-container">
+                    <span class="cart-item-name"></span>
+                    <span class="cart-item-quantity"></span>
+                </div>
+                <span class="cart-item-total-price"></span>
+            </div>
+        </div>
+        
+    </template>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <template id="store-item-template">
+
+        <div class="store-item">
+            <div class="item-display"></div>
+            <div class="item-type"></div>
+            <div class="item-info">
+                <div class="item-name-price">
+                    <span class="item-name"></span>
+                    <span class="item-price"></span>
+                </div>
+                <button class="add-to-cart btn btn-primary">Add to cart</button>
+            </div>
+        </div>
+
+    </template>
+    <!-- ----------------------------------------------------------------------- -->
+
+</body>
+
+</html>

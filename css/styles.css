@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: .2rem; 
+    margin: 0; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: solid;  */
+}
+
+/* --------------------------------- Header --------------------------------- */
+.cart-btn>img{
+    width: 2rem; 
+}
+.cart-btn{
+    /* needed because img covers the actual btn*/
+    z-index: 2; 
+}
+
+.navbar-container{
+    display: flex; 
+    justify-content: space-between;
+    background-color: gold;
+    
+    align-items: center;
+    padding: .5rem; 
+    font-size: 2rem; 
+}
+.navbar{
+    font-size: 1.2rem; 
+}
+
+/* ---------------------------------- Cart ---------------------------------- */
+.cart-items{
+    box-shadow: 5px 5px 5px lightgrey; 
+    width: 30%; 
+    right:  0;
+}
+
+.decrease-cart-item-quantity-btn>img{
+    width: 1rem; 
+    z-index: -10;
+}
+.cart-items:not([show]){
+    display: none;
+}
+.cart-btn:not([show]){
+    display: none;
+}
+
+.cart-item{
+    box-shadow: 5px 5px 5px lightgrey; 
+
+}
+
+/* ---------------------------------- Store --------------------------------- */
+.store-items{
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.store-item{
+    width: 50%; 
+    font-size: 1.5rem; 
+    padding: 1rem; 
+    box-shadow: 2px 2px 5px lightgrey;
+}
+.item-display{
+    width: 100%; 
+    height: 5rem;
+}
+
+.item-type{
+    font-size: 1rem;
+    color: grey; 
+}
+.item-info{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name-price{
+    display: flex;
+    flex-direction: column; 
+}
+.item-name{
+    font-size: 1.2rem; 
+
+}
+.item-price{
+    font-size: 1rem; 
+}
+.add-to-cart{
+    font-size: 1.2rem; 
+}
